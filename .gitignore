@@ -1,0 +1,8 @@
+*.olean
+/_target
+/leanpkg.path
+/scratch/*
+/html/*
+./makeAll
+./locale
+/locale
