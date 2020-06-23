@@ -4,7 +4,7 @@ import tactic
 Knights and knaves puzzles by R. Smullyan.
 There is an island where all inhabitants are either knights or knaves. 
 Knights always tell the truth. Knaves always lie.
-Jack and Bill are two inhabitants of this island.
+Jack and Bob are two inhabitants of this island.
 -/
 
 inductive person
@@ -18,7 +18,7 @@ structure Q := (p₁ p₂ : person)
 
 /-
 In this first puzzle, only Jack makes a statement.
-He affirms that both our heroes (i.e. both Jack and Bill) are knaves.
+He affirms that both our heroes (i.e. both Jack and Bob) are knaves.
 What kind of islanders are they?
 -/
 
@@ -42,9 +42,9 @@ end
 end Q1
 
 /-
-In the second puzzle, both Jack and Bill make a statement.
-Jack states that he's a knave if and only if Bill is a knave.
-Bill states that they are different kinds. 
+In the second puzzle, both Jack and Bob make a statement.
+Jack states that he's a knave if and only if Bob is a knave.
+Bob only states that they are different kinds. 
 Again, what kind of islanders are our protagonists?
 -/
 

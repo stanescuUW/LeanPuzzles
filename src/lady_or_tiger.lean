@@ -93,8 +93,8 @@ the second door (D2), which is true if a tiger is hidden behind it but false oth
 
 /-
 Puzzle number four: 
-First door sign reads: "Both rooms contain ladies." 
-Second door sign reads: "Both rooms contain ladies."
+First door sign says that both rooms contain ladies.
+Second door sign is identical.
 -/
 
 def Q4 := Q
@@ -132,8 +132,8 @@ end
 
 /-
 Puzzle number five: 
-First door sign reads: "At least one room contains a lady." 
-Second door sign reads: "The other room contains a lady."
+First door sign says that at least one room contains a lady.
+Second door sign says : "In the other room there is a lady."
 -/
 
 end Q4
@@ -165,9 +165,9 @@ end Q5
 
 /-
 Puzzle number six: 
-First door sign reads: "It makes no difference which room you pick." 
-Second door sign reads: "There is a lady in the other room."
-Apparently he king is particularly fond of this puzzle.
+First door sign says that it makes no difference which room the prisoner picks.
+Second door sign is the same as in the previous puzzle.
+Apparently the king is particularly fond of this puzzle.
 -/
 
 def Q6 := Q
