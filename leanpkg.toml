@@ -1,8 +1,8 @@
 [package]
 name = "LeanPuzzles"
 version = "0.1"
-lean_version = "leanprover-community/lean:3.16.3"
+lean_version = "leanprover-community/lean:3.16.4"
 path = "src"
 
 [dependencies]
-mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "103743e3d09bdce5a9dc8265f78feaa8551e9348"}
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "2aa08c1fb72cb34e826e9c5044aa81dae19e9ebf"}
