@@ -4,5 +4,4 @@
 /scratch/*
 /html/*
 ./makeAll
-./locale
-/locale
+/src/incubator

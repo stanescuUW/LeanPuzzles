@@ -38,12 +38,12 @@ namespace Q1
 
 variables (q : Q1)
 
--- Joe's statement; Joe is the first member of q
-def S1 := q.1 = n ∧ q.2 = n
+-- Joe's statement
+def S1 := q.Joe = n ∧ q.Bob = n
 -- Stating that Joe can be a knight or a knave
-def H := (q.1 = y ∧ q.S1) ∨ (q.1 = n ∧ ¬ q.S1)
+def H := (q.Joe = y ∧ q.S1) ∨ (q.Joe = n ∧ ¬ q.S1)
 
-lemma answer : q.H → q.1 = n ∧ q.2 = y :=
+lemma answer : q.H → q.Joe = n ∧ q.Bob = y :=
 begin
    rcases q with ⟨_|_,_|_⟩;
    { simp [H, S1], },
@@ -66,16 +66,17 @@ namespace Q2
 
 variables (q : Q2)
 
--- Joe's statement; Joe is the first member of q
-def S1 := q.1 = n ↔ q.2 = n
--- Bob's statement; Bob is the second member of q
-def S2 := q.1 = y ∧ q.2 = n ∨ q.1 = n ∧ q.2 = y
+-- Joe's statement
+def S1 := q.Joe = n ↔ q.Bob = n
+-- Bob's statement 
+def S2 := q.Joe ≠ q.Bob
 -- Stating that either one can be a knight or a knave
-def H1 := (q.1 = y ∧ q.S1) ∨ (q.1 = n ∧ ¬ q.S1)
-def H2 := (q.2 = y ∧ q.S2) ∨ (q.2 = n ∧ ¬ q.S2)
+def H1 := (q.Joe = y ∧ q.S1) ∨ (q.Joe = n ∧ ¬ q.S1)
+def H2 := (q.Bob = y ∧ q.S2) ∨ (q.Bob = n ∧ ¬ q.S2)
+-- Again two forms here:
 def H := q.H1 ∧ q.H2
 
-lemma answer : q.H → q.1 = n ∧ q.2 = y :=
+lemma answer : q.H → q.Joe = n ∧ q.Bob = y :=
 begin
    rcases q with ⟨_|_,_|_⟩;
    { simp [H, H1, S1, H2, S2], },
